@@ -16,13 +16,13 @@ categories = ["game-engines", "rendering"]
 
 [dependencies]
 bevy_eventlistener_derive = { path = "macros", version = "0.7.0" }
-bevy_ecs = "0.13"
-bevy_app = "0.13"
-bevy_utils = "0.13"
-bevy_hierarchy = "0.13"
+bevy_ecs = { git = "https://github.com/bevyengine/bevy" }
+bevy_app = { git = "https://github.com/bevyengine/bevy" }
+bevy_utils = { git = "https://github.com/bevyengine/bevy" }
+bevy_hierarchy = { git = "https://github.com/bevyengine/bevy" }
 
 [dev-dependencies]
-bevy = { version = "0.13", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy", default-features = false, features = [
     "bevy_winit",
     "x11",
 ] }
